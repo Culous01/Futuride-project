@@ -3,7 +3,7 @@ import sectionTwoImage from "../assets/SectionTwoImage.png"
 
 const AutomotiveDesign = () => {
     return (
-        <section className="bg-[url(./src/assets/SectionTwoImage.png)] bg-cover bg-center bg-no-repeat h-screen">
+        <section style={{'--sectionTwo-image': `url(${sectionTwoImage})`}} className="bg-[image:var(--sectionTwo-image)] bg-cover bg-center bg-no-repeat h-screen">
             <div className="flex justify-center h-screen ">   
                 <div className="flex flex-col gap-4 text-center max-w-7xl p-6 mt-20" >
                     <h1 className="text-4xl lg:text-5xl xl:text-5xl font-bold xl:leading-19 lg:leading-13 text-balance text-gray-800 font-IBM-Plex">

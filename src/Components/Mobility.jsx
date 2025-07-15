@@ -1,9 +1,10 @@
-import React from 'react'
+import React from 'react';
+import sectionFourImage from '../assets/SectionFourImage.png';
 
 const Mobility = () => {
 
     return (
-        <section className="bg-[url(./src/assets/SectionFourImage.png)] bg-cover bg-center bg-no-repeat h-screen">
+        <section style={{'--sectionFour-image': `url(${sectionFourImage})`}} className="bg-[image:var(--sectionFour-image)] bg-cover bg-center bg-no-repeat h-screen">
             <div className="flex justify-center">   
                 <div className="flex flex-col items-center gap-10 text-center max-w-xl p-4 mt-16">
                     <h1 className="text-3xl/12 lg:text-5xl/14 font-bold text-balance text-gray-800 font-IBM-Plex">

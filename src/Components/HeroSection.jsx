@@ -1,12 +1,13 @@
 import React from 'react';
 import NavBar from './NavBar';
+import HeroImg from '../assets/HeroSectionImage.png'
 
 const HeroSection = () => {
 
     return (
         <div className=''>
             <NavBar />
-            <div className="relative isolate px-6 lg:px-8 h-screen bg-[url(./src/assets/HeroSectionImage.png)] bg-cover bg-center bg-no-repeat flex justify-center ">
+            <div style={{ '--heroImage-url': `url(${HeroImg})` }} className="relative bg-[image:var(--heroImage-url)] isolate px-6 lg:px-8 h-screen bg-cover bg-center bg-no-repeat flex justify-center ">
                 <div className="max-w-5xl xl:mt-30 lg:mt-32 md:mt-36 sm:mt-36 mt-28">   
                     <div className="text-center">
                         <h1 className="flex flex-col text-3xl sm:text-5xl md:text-5xl lg:text-5xl xl:text-7xl font-semibold xl:leading-19 lg:leading-13 tracking-tight text-balance text-white font-IBM-Plex">

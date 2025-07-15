@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import sectionThreeImage from '../assets/SectionThreeImage.png'
 
 const Innovation = () => {
     const [inputValue, setInputValue] = useState('');
@@ -7,7 +8,7 @@ const Innovation = () => {
         setInputValue(e.target.value);
     };
     return (
-        <section className="h-screen w-full bg-cover bg-center bg-no-repeat  bg-[url('./src/assets/SectionThreeImage.png')] relative flex items-center justify-center overflow-hidden">
+        <section style={{'--sectionThree-image': `url(${sectionThreeImage})`}} className="relative bg-[image:var(--sectionThree-image)] h-screen w-full bg-cover bg-center bg-no-repeat flex items-center justify-center overflow-hidden">
             <div className="max-w-7xl lg:backdrop-blur-none backdrop-blur-3xl w-full py-30 xl:py-0 grid grid-cols-1 lg:grid-cols-2 lg:gap-16 gap-7 z-10">
                 
                 {/* Left Side: Car Info */}
