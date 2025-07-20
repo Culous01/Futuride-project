@@ -1,21 +1,23 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 import WhiteLogo from "../assets/whiteLogo.png";
 import { Dialog, DialogPanel } from '@headlessui/react';
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
+import { useScroll } from './ScrollContext'; 
 
 const NavBar = () => {
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+    const { carsRef, aboutRef, dealRef, scrollTo } = useScroll();
 
     const navigation = [
         { name: 'Home', href: '/' },
-        { name: 'Cars', href: '#' },
-        { name: 'About', href: '#' },
-        { name: 'Deal', href: '#' },
+        { name: 'Cars', onClick: () => scrollTo(carsRef) },
+        { name: 'About', onClick: () => scrollTo(aboutRef) },
+        { name: 'Deal', onClick: () => scrollTo(dealRef) },
     ];
 
     return (
         <div>
-            <header className="absolute inset-x-0 top-0 z-50">
+            <header className="fixed inset-x-0 top-0 z-50">
                 <nav aria-label="Global" className="flex items-center justify-between py-6 px-6 lg:px-28">
                 <div className="flex lg:flex-1">
                     <a href="/" className="flex items-center -m-1.5 p-1.5">
@@ -39,11 +41,26 @@ const NavBar = () => {
                 </div>
 
                 <div className="hidden lg:flex lg:gap-x-12">
-                    {navigation.map((item) => (
-                    <a key={item.name} href={item.href} className="text-sm/6 font-semibold text-white/60 hover:text-white">
-                        {item.name}
-                    </a>
-                    ))}
+            {navigation.map((item) =>
+            item.onClick ? (
+                <button
+                key={item.name}
+                onClick={item.onClick}
+                className="text-sm/6 cursor-pointer hover:border-b-2 hover:animate-pulse font-semibold text-white/60 hover:text-white"
+                >
+                {item.name}
+                </button>
+            ) : (
+                <a
+                key={item.name}
+                href={item.href}
+                className="text-sm/6 font-semibold hover:border-b-2 text-white/60 hover:text-white"
+                >
+                {item.name}
+                </a>
+            )
+            )}
+
                 </div>
                 </nav>
 

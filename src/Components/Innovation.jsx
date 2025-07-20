@@ -37,7 +37,7 @@ const Innovation = () => {
                         </p>
                     </div>
 
-                    <div className="space-y-4 lg:space-y-15 max-w-xl">
+                    <div className="space-y-4 lg:space-y-12 max-w-xl">
                         <div className='flex flex-col gap-3'>
                             <input
                             type="text"

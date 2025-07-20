@@ -12,7 +12,7 @@ const Mobility = () => {
                     <button className="lg:w-96 w-full p-4 bg-blue-600 hover:bg-blue-900 cursor-pointer text-white rounded-xl font-semibold transition duration-300">
                         Book a Test
                     </button>
-                </div>
+                </div> 
             </div>
         </section>
     )
