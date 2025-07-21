@@ -15,9 +15,11 @@ function App() {
 
   return (
     <>
-      <Routes>
-        <Route path="/" element={<HeroSection/>} />
-      </Routes>
+      <div ref={homeRef}>
+        <Routes>
+          <Route path="/" element={<HeroSection/>} />
+        </Routes>
+      </div>
       
       <MercedesBenz />
 

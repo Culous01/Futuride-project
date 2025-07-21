@@ -80,7 +80,7 @@ const NavBar = () => {
                                 <button
                                     type="button"
                                     onClick={() => setMobileMenuOpen(false)}
-                                    className="-m-2.5 bg-gray-300 rounded-md p-2.5 text-white">
+                                    className="-m-2.5 rounded-md p-2.5 text-white">
 
                                     <span className="sr-only">Close menu</span>
                                     <XMarkIcon aria-hidden="true" className="size-6" />
