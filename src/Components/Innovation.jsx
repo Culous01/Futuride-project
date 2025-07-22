@@ -14,27 +14,27 @@ const Innovation = () => {
 
     return (
         <section style={{'--sectionThree-image': `url(${sectionThreeImage})`}} className="relative bg-[image:var(--sectionThree-image)] h-screen w-full bg-cover bg-center bg-no-repeat flex items-center justify-center overflow-hidden">
-            <div className="max-w-7xl lg:backdrop-blur-none backdrop-blur-3xl w-full py-30 xl:py-0 grid grid-cols-1 lg:grid-cols-2 lg:gap-16 gap-7 z-10">
+            <div className="max-w-7xl lg:backdrop-blur-none backdrop-blur-xs w-full py-30 xl:py-0 grid grid-cols-1 lg:grid-cols-2 lg:gap-16 gap-7 z-10">
                 
                 {/* Left Side: Car Info */}
-                <div className="bg-opacity-90 p-4 lg:p-8 md:p-8 sm:p-7 rounded-xl text-white flex flex-col justify-between gap-10">
+                <div className="bg-opacity-90 p-4 lg:p-8 md:p-8 sm:p-7 rounded-xl flex flex-col justify-between gap-10">
                     <div className="space-y-4 lg:w-full max-w-xl">
-                        <h2 className="text-2xl lg:text-3xl font-bold">A Legacy of Innovation</h2>
-                        <p className="text-base lg:text-xl md:text-xl lg:text-gray-300 text-gray-50">
+                        <h2 className="text-2xl lg:text-3xl font-bold lg:text-white text-black">A Legacy of Innovation</h2>
+                        <p className="text-base lg:text-xl md:text-xl lg:text-gray-300 text-black">
                         With decades of experience in crafting automobiles that blend performance with luxury
                         </p>
                     </div>
 
                     <div className="space-y-4 lg:w-full max-w-xl">
-                        <h2 className="text-2xl lg:text-3xl font-bold">Driving the Future</h2>
-                        <p className="text-base lg:text-xl md:text-xl lg:text-gray-300 text-gray-50">
+                        <h2 className="text-2xl lg:text-3xl font-bold lg:text-white text-black">Driving the Future</h2>
+                        <p className="text-base lg:text-xl md:text-xl lg:text-gray-300 text-black">
                         We believe in a future where every journey is an experience of luxury, efficiency, and sustainability. Our cars are designed with this vision in mind
                         </p>
                     </div>
                 </div>
 
                 {/* Right Side: Booking Info */}
-                <div className="xl:p-8 lg-8 md:p-8 sm:p-7 p-4 xl:px-0  rounded-xl flex flex-col justify-center lg:gap-15 gap-10">
+                <div className="xl:p-8 lg:p-8 md:p-8 sm:p-7 p-4 xl:px-0  rounded-xl flex flex-col justify-center lg:gap-15 gap-10">
                     <div className="space-y-6 w-full md:w-xl">
                         <h2 className="text-2xl lg:text-4xl font-bold text-black ">The Pinnacle of Automotive Design</h2>
                         <p className="text-base lg:text-xl md:text-xl">
