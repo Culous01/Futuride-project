@@ -13,10 +13,10 @@ const NextGenVehicle = () => {
                 <h1 className='text-white font-IBM-Plex font-bold text-5xl text-center'>Next-Generation Vehicles</h1>
                     
                 <m.div initial={{opacity: 0, y: -100}} whileInView={{opacity: 1, y: 0}} viewport={{once: true}} transition={{duration: 0.60, ease: "easeIn"}} className='max-w-8xl lg:p-9 grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 items-center gap-8'>
-                    <img src={NGVCar1} className='h-full w-full hover:scale-110 rounded-2xl cursor-grab' alt="NGVCar1"/>
-                    <img src={NGVCar2} className='h-full w-full hover:scale-110 rounded-2xl cursor-grab' alt="NGVCar2"/>
-                    <img src={NGVCar3} className='h-full w-full hover:scale-110 rounded-2xl cursor-grab' alt="NGVCar3" />
-                    <img src={NGVCar4} className='h-full w-full hover:scale-110 rounded-2xl cursor-grab' alt="NGVCar4" />
+                    <img src={NGVCar1} className='h-full w-full hover:scale-110 hover:duration-100 hover:ease-in rounded-2xl cursor-grab' alt="NGVCar1"/>
+                    <img src={NGVCar2} className='h-full w-full hover:scale-110 hover:duration-100 hover:ease-in rounded-2xl cursor-grab' alt="NGVCar2"/>
+                    <img src={NGVCar3} className='h-full w-full hover:scale-110 hover:duration-100 hover:ease-in rounded-2xl cursor-grab' alt="NGVCar3" />
+                    <img src={NGVCar4} className='h-full w-full hover:scale-110 hover:duration-100 hover:ease-in rounded-2xl cursor-grab' alt="NGVCar4" />
                 </m.div>
             </div>
         </div>
