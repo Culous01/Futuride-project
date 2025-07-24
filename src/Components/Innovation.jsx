@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import sectionThreeImage from '../assets/SectionThreeImage.png'
+import sectionThreeImage from '../assets/SectionThreeImage.png';
+import { motion as m} from "framer-motion";
 
 const Innovation = () => {
     const [inputValue, setInputValue] = useState('');
@@ -17,33 +18,33 @@ const Innovation = () => {
             <div className="max-w-7xl lg:backdrop-blur-none backdrop-blur-xs w-full py-30 xl:py-0 grid grid-cols-1 lg:grid-cols-2 lg:gap-16 gap-7 z-10">
                 
                 {/* Left Side: Car Info */}
-                <div className="bg-opacity-90 p-4 lg:p-8 md:p-8 sm:p-7 rounded-xl flex flex-col justify-between gap-10">
-                    <div className="space-y-4 lg:w-full max-w-xl">
+                <m.div  className="bg-opacity-90 p-4 lg:p-8 md:p-8 sm:p-7 rounded-xl flex flex-col justify-between gap-10">
+                    <m.div initial={{opacity: 0, x: -250}} whileInView={{opacity: 1, x: 0}} viewport={{once: true}} transition={{duration: 0.75, ease: "easeIn"}} className="space-y-4 lg:w-full max-w-xl">
                         <h2 className="text-2xl lg:text-3xl font-bold lg:text-white text-black">A Legacy of Innovation</h2>
                         <p className="text-base lg:text-xl md:text-xl lg:text-gray-300 text-black">
                         With decades of experience in crafting automobiles that blend performance with luxury
                         </p>
-                    </div>
+                    </m.div>
 
-                    <div className="space-y-4 lg:w-full max-w-xl">
+                    <m.div initial={{opacity: 0, x: -250}} whileInView={{opacity: 1, x: 0}} viewport={{once: true}} transition={{duration: 0.95, ease: "easeIn"}} className="space-y-4 lg:w-full max-w-xl">
                         <h2 className="text-2xl lg:text-3xl font-bold lg:text-white text-black">Driving the Future</h2>
                         <p className="text-base lg:text-xl md:text-xl lg:text-gray-300 text-black">
                         We believe in a future where every journey is an experience of luxury, efficiency, and sustainability. Our cars are designed with this vision in mind
                         </p>
-                    </div>
-                </div>
+                    </m.div>
+                </m.div>
 
                 {/* Right Side: Booking Info */}
                 <div className="xl:p-8 lg:p-8 md:p-8 sm:p-7 p-4 xl:px-0  rounded-xl flex flex-col justify-center lg:gap-15 gap-10">
-                    <div className="space-y-6 w-full md:w-xl">
+                    <m.div initial={{opacity: 0, x: 300}} whileInView={{opacity: 1, x: 0}} viewport={{once: true}} transition={{duration: 0.75, ease: "easeIn"}} className="space-y-6 w-full md:w-xl">
                         <h2 className="text-2xl lg:text-4xl font-bold text-black ">The Pinnacle of Automotive Design</h2>
-                        <p className="text-base lg:text-xl md:text-xl">
+                        <p  className="text-base lg:text-xl md:text-xl">
                         Our collection represents the ultimate in automotive craftsmanship, where every detail is carefully considered to provide drivers with an experience that transcends the ordinary.
                         </p>
-                    </div>
+                    </m.div>
 
-                    <div className="space-y-4 lg:space-y-12 max-w-xl">
-                        <div className='flex flex-col gap-3'>
+                    <m.div initial={{opacity: 0, y: 100}} whileInView={{opacity: 1, y: 0}} viewport={{once: true}} transition={{duration: 0.95, ease: "easeIn"}} className="space-y-4 lg:space-y-12 max-w-xl">
+                        <div viewport={{once: true}} transition={{duration: 0.95, ease: "easeIn"}} className='flex flex-col gap-3'>
                             <input
                             type="text"
                             value={inputValue}
@@ -58,7 +59,7 @@ const Innovation = () => {
                         <button type="button" onClick={handleBookTest} className="w-full p-4 bg-blue-600 hover:bg-blue-900 cursor-pointer text-white rounded-xl font-semibold transition duration-300">
                         Book a Test
                         </button>
-                    </div>
+                    </m.div>
                 </div>
             </div>
         </section>

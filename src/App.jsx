@@ -9,6 +9,7 @@ import { useScroll } from './Components/ScrollContext';
 import NextGenVehicle from './Components/NextGenVehicle';
 import Mobility from './Components/Mobility';
 import Footer from './Components/Footer';
+import { AnimatePresence } from 'framer-motion';
 
 function App() {
   const { homeRef, carsRef, aboutRef, dealRef } = useScroll();
@@ -23,9 +24,11 @@ function App() {
       
       <MercedesBenz />
 
+    <AnimatePresence>
       <div ref={aboutRef}>
         <AutomotiveDesign />
       </div>
+    </AnimatePresence>
 
       <div ref={dealRef}>
         <Innovation />
